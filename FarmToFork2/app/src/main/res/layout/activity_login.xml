@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logoimage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/droid_sans_bold"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoimage"
+        tools:ignore="MissingConstraints" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/inputPassword"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="@drawable/input_bg"-->
+<!--        android:drawableLeft="@drawable/ic_person"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Username"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:paddingLeft="20dp"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:paddingRight="10dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:textColor="@color/colorWhite"-->
+<!--        android:textColorHint="@color/colorWhite"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/inputEmail"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/inputEmail"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />-->
+
+
+    <EditText
+        android:id="@+id/inputnumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/droid_sans"
+        android:hint="Mobile Number"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/inputnumber"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#37b34c"
+
+                android:fontFamily="@font/droid_sans"
+                android:text="MPIN"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:buttonTint="#37b34c"
+                android:textSize="18sp"
+                android:fontFamily="@font/droid_sans"
+
+                android:textColor="#000"
+                android:text="Send OTP" />
+        </RadioGroup>
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/droid_sans"
+        android:paddingRight="35dp"
+        android:text="Forgot MPin?"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/radio_group" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/droid_sans_bold"
+        android:text="Login"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingRight="35dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnlogin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droid_sans"
+            android:paddingRight="8dp"
+            android:text="Dont have an Account?"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droid_sans_bold"
+            android:text="Register"
+            android:textColor="@color/green"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btnGoogle"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:paddingLeft="20dp"-->
+<!--        android:text="Google"-->
+<!--        android:textAlignment="textStart"-->
+<!--        android:textAllCaps="false"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/btnFacebook"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout"-->
+<!--        app:layout_constraintVertical_bias="0.32999998" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnFacebook"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:background="@drawable/btn_bg"-->
+<!--        android:drawableStart="@drawable/ic_facebook"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:paddingLeft="20dp"-->
+<!--        android:text="Facebook"-->
+<!--        android:textAlignment="textStart"-->
+<!--        android:textAllCaps="false"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/btnGoogle"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/btnGoogle"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/btnGoogle" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

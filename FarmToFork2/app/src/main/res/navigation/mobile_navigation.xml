@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.farmtofork.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.farmtofork.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.farmtofork.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_farminfo"
+        android:name="com.example.farmtofork.ui.farminfo.Farminfo"
+        android:label="@string/menu_farminfo"
+        tools:layout="@layout/fragment_farminfo" />
+    <fragment
+        android:id="@+id/nav_geolocation"
+        android:name="com.example.farmtofork.ui.Geolocation.Geolocation"
+        android:label="@string/menu_geolocation"
+        tools:layout="@layout/fragment_geolocation" />
+    <fragment
+        android:id="@+id/nav_cropcalender"
+        android:name="com.example.farmtofork.ui.cropcalender.CropCalender"
+        android:label="@string/menu_cropcalender"
+        tools:layout="@layout/fragment_cropcalender" />
+    <fragment
+        android:id="@+id/nav_cropinfo"
+        android:name="com.example.farmtofork.ui.cropinfo.CropInfo"
+        android:label="@string/menu_cropinfo"
+        tools:layout="@layout/fragment_cropinfo" />
+
+
+</navigation>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FarmToFork</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Profile</string>
+    <string name="menu_slideshow">Bank Details</string>
+    <string name="menu_farminfo">Farm Info</string>
+    <string name="menu_geolocation">Geo Location</string>
+    <string name="menu_cropcalender">Crop Calender</string>
+    <string name="menu_cropinfo">Crop Info</string>
+    <string name="logout">Logout</string>
+
+</resources>
